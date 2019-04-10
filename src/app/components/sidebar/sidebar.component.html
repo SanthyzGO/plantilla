@@ -1,0 +1,81 @@
+<div class="row">
+    <div class="col">
+        <h1>NgIF</h1>
+        <hr>
+        <div class="card" *ngIf="mostrar">
+            <i class="fab fa-android"></i>
+            <div class="card-body">
+                <h5 class="card-title">{{ persona.nombre }}</h5>
+                <p class="card-text"> {{ persona.apellido}}</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+        <button (click)="myToogle()" class="btn btn-outline-primary" style="width: 100%">Mostrar / Ocultar</button>
+
+    </div>
+    <div class="col">
+        <h1>NgFor</h1>
+        <hr>
+        <ul class="list-group">
+            <li *ngFor="let item of troncales" class="list-group-item">{{item}}</li>
+        </ul>
+    </div>
+    <div class="col mt09">
+        <h1>Ngswich</h1>
+        <hr>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Options</label>
+            </div>
+            <select (change)="seleccion($event.target.value)" class="custom-select" id="inputGroupSelect01">
+          <option selected>Choose...</option>
+          <option *ngFor="let troncal of troncales" value="1">{{ troncal }}</option>
+        </select>
+        </div>
+    </div>
+</div>
+<!-- <div class="row">
+    <div class="col-12">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre troncal</th>
+                </tr>
+            </thead>
+            <tbody [ngSwitch]="troncalSel">
+                <div *ngSwitchCase="1" class="ruta1">
+                    <tr *ngFor="let ruta of rutas">
+                        <td scope="row">{{ruta}}</td>
+                        <td>{{ruta}}</td>
+                    </tr>
+                </div>
+                <div *ngSwitchCase="2" class="ruta2">
+                    <tr *ngFor="let ruta of rutas">
+                        <td scope="row">{{ruta}}</td>
+                        <td>{{ruta}}</td>
+                    </tr>
+                </div>
+                <div *ngSwitchCase="3" class="ruta3">
+                    <tr *ngFor="let ruta of rutas">
+                        <td scope="row">{{ruta}}</td>
+                        <td>{{ruta}}</td>
+                    </tr>
+                </div>
+            </tbody>
+        </table>
+
+        <container-element [ngSwitch]="troncalSel">
+             the same view can be shown in more than one case
+            <some-element *ngSwitchCase="1">...</some-element>
+            <some-element *ngSwitchCase="2">...</some-element>
+            <some-other-element *ngSwitchCase="3">...</some-other-element>
+            default case when there are no matches 
+            <some-element *ngSwitchDefault>...</some-element> 
+        </container-element>
+    </div> 
+
+
+</div>-->

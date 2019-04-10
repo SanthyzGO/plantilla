@@ -1,0 +1,16 @@
+<div class="col mt09">
+    <h2>imagenes</h2>
+    <hr>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">Options</label>
+        </div>
+        <select (change)="selected($event.target.value)" class="custom-select">
+      <option selected>Choose...</option>
+      <option *ngFor="let etiqueta of etiquetas" value="{{ etiqueta }}">{{ etiqueta }}</option>
+    </select>
+    </div>
+</div>
+<div *ngFor="let imageout of imagen">
+    <img src={{imageout.media.m}} alt={{imageout.author}}>
+</div>

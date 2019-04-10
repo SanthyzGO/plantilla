@@ -1,0 +1,8 @@
+<p>
+    conversor works!
+</p>
+<input type="text" [(ngModel)]="cantPeso">
+<input type="text" [(ngModel)]="valorDolar">
+
+<button (click)="calcular()">Calcular</button>
+<p> Dolar: {{ dolar | currency }}</p>
