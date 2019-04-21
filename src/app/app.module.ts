@@ -9,6 +9,10 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { ConversorComponent } from './components/conversor/conversor.component';
 import{FormsModule} from '@angular/forms';
 import { ImagenesComponent } from './components/imagenes/imagenes.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { CarruselComponent } from './components/carrusel/carrusel.component';
+import { NoticiasComponent } from './components/noticias/noticias.component';
+import { BannernoticiasComponent } from './components/bannernoticias/bannernoticias.component';
 
  
  
@@ -20,12 +24,16 @@ import { ImagenesComponent } from './components/imagenes/imagenes.component';
     FooterComponent,
     SidebarComponent,
     ConversorComponent,
-    ImagenesComponent
+    ImagenesComponent,
+    CarruselComponent,
+    NoticiasComponent,
+    BannernoticiasComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
