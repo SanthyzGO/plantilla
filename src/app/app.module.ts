@@ -13,6 +13,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { CarruselComponent } from './components/carrusel/carrusel.component';
 import { NoticiasComponent } from './components/noticias/noticias.component';
 import { BannernoticiasComponent } from './components/bannernoticias/bannernoticias.component';
+import { BannersitiosComponent } from './components/bannersitios/bannersitios.component';
 
  
  
@@ -27,7 +28,8 @@ import { BannernoticiasComponent } from './components/bannernoticias/bannernotic
     ImagenesComponent,
     CarruselComponent,
     NoticiasComponent,
-    BannernoticiasComponent
+    BannernoticiasComponent,
+    BannersitiosComponent
   ],
   imports: [
     BrowserModule,

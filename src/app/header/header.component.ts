@@ -25,6 +25,7 @@ import { Component } from '@angular/core';
           <a class="dropdown-item" href="/imagenes">Desplegar imagenes</a>
           <a class="dropdown-item" href="/conversor">Conversor</a>
           <a class="dropdown-item" href="/bannernoticias">Noticias</a>
+          <a class="dropdown-item" href="/bannersitios">Sitios de Interes</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>

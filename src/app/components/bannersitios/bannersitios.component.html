@@ -1,0 +1,9 @@
+<div class="card-deck">
+    <div class="card" *ngFor="let sitios of bannerSitios">
+        <a [href]="sitios['link']"><img [src]="sitios['ruta']" class="card-img-top" alt="{{sitios['descripcion']}}"></a>
+        <div class="card-body">
+            <h5 class="card-title">{{sitios['titulo']}}</h5>
+            <p class="card-text">{{sitios['descripcion']}}</p>
+        </div>
+    </div>
+</div>

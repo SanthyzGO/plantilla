@@ -2,25 +2,12 @@
     <div class="card bg-dark text-white">
         <div class="card-body">
             <h2>Noticias</h2>
-            <ngb-carousel *ngIf="imagesNoticias">
-                <ng-template ngbSlide>
-                    <a href="imagesNoticias[0]"><img [src]="imagesNoticias[1]" alt="Aplicacion de Moovit"></a>
+            <ngb-carousel>
+                <ng-template ngbSlide *ngFor="let noticia of imagesNoticias">
+                    <a href="{{noticia['link']}}"><img [src]="noticia['ruta']" alt="{{noticia['descripcion']}}"></a>
                     <div class="carousel-caption">
-                        <h3> 1/1</h3>
-                        <p>afsjsabjasbdfjhfb hsbdfjhbfsjbf</p>
-                    </div>
-                </ng-template>
-                <ng-template ngbSlide>
-                    <a href="imagesNoticias[2]"><img [src]="imagesNoticias[3]" alt="Pagina de Transmielnio"></a>
-                    <div class="carousel-caption">
-                        <h3> 1/2</h3>
-                        <p>afsjsabjasbdfjhfb hsbdfjhbfsjbf</p>
-                    </div>
-                </ng-template>
-                <ng-template ngbSlide>
-                    <a href="imagesNoticias[4]"><img [src]="imagesNoticias[5]" alt="Aplicacion de sitp"></a>
-                    <div class="carousel-caption">
-                        <h3> 1/3</h3>
+                        <h3>{{noticia['titulo']}} </h3>
+                        <p>{{noticia['descripcion']}}</p>
                     </div>
                 </ng-template>
             </ngb-carousel>
