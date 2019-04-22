@@ -24,12 +24,24 @@ export class BannersitiosComponent implements OnInit {
   'ruta': '../assets/img/bannerTransmiSitp.png',
   'titulo': 'TransmiSITP App',
   'descripcion': 'Aplicacion movit conoce el sistema de transmilenio desde tu celular'
-},
+  },
   {
-    'link':'http://movilixa.com/',
-  'ruta':'../assets/img/bannerTransmiSitp.png',
-  'titulo':'TransmiSITP App',
-  'descripcion':'Aplicacion movit conoce el sistema de transmilenio desde tu celular'
+    'link': 'http://movilixa.com/',
+  'ruta': '../assets/img/bannerTransmiSitp.png',
+  'titulo': 'TransmiSITP App',
+  'descripcion': 'Aplicacion movit conoce el sistema de transmilenio desde tu celular'
+},
+{
+  'link': 'http://movilixa.com/',
+'ruta': '../assets/img/bannerTransmiSitp.png',
+'titulo': 'TransmiSITP App',
+'descripcion': 'Aplicacion movit conoce el sistema de transmilenio desde tu celular'
+},
+{
+  'link': 'http://movilixa.com/',
+'ruta': '../assets/img/bannerTransmiSitp.png',
+'titulo': 'TransmiSITP App',
+'descripcion': 'Aplicacion movit conoce el sistema de transmilenio desde tu celular'
 }];
   constructor() { }
 
