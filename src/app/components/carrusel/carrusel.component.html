@@ -1,18 +1,21 @@
 <div class="col-md-10 offset-1">
     <div class="card bg-light mb-3">
-        <div class="card-body">
+        <div class="card-header text-center text-muted">
             <h2>Sitios de Interes</h2>
-            <ngb-carousel>
-                <ng-template ngbSlide *ngFor="let sitio of imagesSitios">
-                    <a href='{{sitio["link"]}}' target="_blank">
-                        <img [src]="sitio['ruta']" alt="{{sitio[' descripcion ']}}">
-                    </a>
-                    <div class="carousel-caption">
+        </div>
+        <ngb-carousel>
+            <ng-template ngbSlide *ngFor="let sitio of imagesSitios">
+                <a href='{{sitio["link"]}}' target="_blank">
+                    <div class="card-body text-center">
                         <h5 class="card-title">{{sitio["titulo"]}}</h5>
                         <p class="card-text">{{sitio["descripcion"]}}</p>
                     </div>
-                </ng-template>
-            </ngb-carousel>
-        </div>
+                    <div class="card-footer">
+                        <img [src]="sitio['ruta']" alt="{{sitio[' descripcion ']}}">
+                    </div>
+                </a>
+            </ng-template>
+        </ngb-carousel>
+
     </div>
 </div>

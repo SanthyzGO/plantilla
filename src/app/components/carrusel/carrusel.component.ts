@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-carrusel',
   templateUrl: './carrusel.component.html',
   styleUrls: ['./carrusel.component.css'],
-  providers: [NgbCarouselConfig] 
+  providers: [NgbCarouselConfig] ,
+  encapsulation: ViewEncapsulation.None
 })
 export class CarruselComponent implements OnInit {
 
@@ -32,7 +33,7 @@ export class CarruselComponent implements OnInit {
   'link':'https://www.transmilenio.gov.co/publicaciones/147584/cicloparqueaderos-en-el-sistema-transmilenio/',
   'ruta':'../assets/img/bannerciclo.jpg',
   'titulo':'Cicloparqueaderos',
-  'descripcion':'Conoce el funcionamiento para guardar tu bici y viajar en transmielnio'
+  'descripcion':'Conoce el funcionamiento para guardar tu bici y viajar en transmilenio'
 },
 {
   'link': 'https://transmichiquis.transmilenio.gov.co/',
@@ -56,7 +57,6 @@ export class CarruselComponent implements OnInit {
   }
 
   ngOnInit() {
-  console.log(this.imagesSitios,"savdagsdvjvasdjasdsah");
 
   }
 

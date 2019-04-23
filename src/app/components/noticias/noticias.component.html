@@ -1,16 +1,21 @@
 <div class="col-md-10 offset-1">
     <div class="card border-dark mb-3">
-        <div class="card-body">
+        <div class="card-header text-center text-muted">
             <h2>Noticias</h2>
-            <ngb-carousel>
-                <ng-template ngbSlide *ngFor="let noticia of imagesNoticias">
-                    <a href="{{noticia['link']}}"><img [src]="noticia['ruta']" alt="{{noticia['descripcion']}}"></a>
-                    <div class="carousel-caption">
-                        <h3>{{noticia['titulo']}} </h3>
-                        <p>{{noticia['descripcion']}}</p>
-                    </div>
-                </ng-template>
-            </ngb-carousel>
         </div>
+        <ngb-carousel>
+            <ng-template ngbSlide *ngFor="let noticia of imagesNoticias">
+                <a href='{{noticia["link"]}}' target="_blank">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">{{noticia["titulo"]}}</h5>
+                        <p class="card-text">{{noticia["descripcion"]}}</p>
+                    </div>
+                    <div class="card-footer">
+                        <img [src]="noticia['ruta']" alt="{{noticia[' descripcion ']}}">
+                    </div>
+                </a>
+            </ng-template>
+        </ngb-carousel>
+
     </div>
 </div>

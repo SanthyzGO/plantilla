@@ -12,7 +12,8 @@ export class NoticiasComponent implements OnInit {
   imagesNoticias =[
   {
     'link': '/bannernoticias',
-    'ruta': '../assets/img_noticias/noticiaTransmi1.png',
+    // 'ruta': '../assets/img_noticias/noticiaTransmi1.png',
+    'ruta': '../assets/img_noticias/luz.jpg',
     'titulo':'Transmilenio Explota',
     'descripcion':'Transmilenio explota no alcanzan los buses para la cantidad de usuarios'
   },
