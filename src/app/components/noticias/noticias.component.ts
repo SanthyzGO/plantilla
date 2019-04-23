@@ -25,8 +25,27 @@ export class NoticiasComponent implements OnInit {
   {
     'link': '/bannernoticias', 
     'ruta': '../assets/img_noticias/noticiaTransmi3.png',
-    'titulo': 'Nuevas Estaciones',
-    'descripcion':'Ante la propuesta de el metro el transmilenio se amplia con estaciones por la septima'
+    'titulo': 'TransMilenio: en marcha un plan para mejorar el servicio',
+    'descripcion':'Ya comenzó el trabajo de ampliación de 73 estaciones mientras avanzamos en los diseños de las nuevas troncales.',
+  },
+  {
+    'link': '/bannernoticias', 
+    'ruta': '../assets/img_noticias/img4.jpg',
+    'titulo': 'Cajera no vende pasaje',
+    'descripcion':'¡El colmo! cajera de Transmilenio se niega a vender pasaje porque le pagan con monedas'
+  },
+  {
+    'link': '/bannernoticias', 
+    'ruta': '../assets/img_noticias/img5.jpg',
+    'titulo': 'En marcha plan para ampliar 49 estaciones de TransMilenio',
+    'descripcion':'Con una inversión de más de 20.000 millones de pesos arrancó el proceso para la ampliación de 49  estaciones de TransMilenio.'
+  },
+  {
+    'link': '/bannernoticias', 
+    'ruta': '../assets/img_noticias/img6.png',
+    'titulo': 'Sobrevive',
+    'descripcion':'Hombre sobrevivió luego de ser atropellado por un TM y una volqueta.',
+    'publicacion':'Fecha: 13/04/2019'
   }
 ];
 

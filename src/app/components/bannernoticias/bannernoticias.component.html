@@ -1,10 +1,12 @@
-<div class="card-deck">
+<div class="grid-container">
     <div class="card " *ngFor="let noticias of bannerNoticias">
-        <a [href]="noticias['link']"><img [src]="noticias['ruta']" class="card-img-top" alt="{{noticias['descripcion']}}"></a>
-        <div class="card-body">
-            <h5 class="card-title">{{noticias['titulo']}}</h5>
-            <p class="card-text">{{noticias['descripcion']}}</p>
-            <p class="card-text"><small class="text-muted">{{noticias['publicacion']}}</small></p>
+        <div class="grid-item">
+            <a [href]="noticias['link']"><img [src]="noticias['ruta']" class="card-img-top" alt="{{noticias['descripcion']}}"></a>
+            <div class="card-body">
+                <h5 class="card-title">{{noticias['titulo']}}</h5>
+                <p class="card-text">{{noticias['descripcion']}}</p>
+                <p class="card-text"><small class="text-muted">{{noticias['publicacion']}}</small></p>
+            </div>
         </div>
     </div>
 </div>

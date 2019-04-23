@@ -1,5 +1,5 @@
 <div class="col-md-10 offset-1">
-    <div class="card text-white bg-secondary mb-3">
+    <div class="card bg-light mb-3">
         <div class="card-body">
             <h2>Sitios de Interes</h2>
             <ngb-carousel>
@@ -7,10 +7,9 @@
                     <a href='{{sitio["link"]}}' target="_blank">
                         <img [src]="sitio['ruta']" alt="{{sitio[' descripcion ']}}">
                     </a>
-                    <div class="carousel-caption">{{sitio["titulo"]}}
-                        <p>
-                            {{sitio["descripcion"]}}
-                        </p>
+                    <div class="carousel-caption">
+                        <h5 class="card-title">{{sitio["titulo"]}}</h5>
+                        <p class="card-text">{{sitio["descripcion"]}}</p>
                     </div>
                 </ng-template>
             </ngb-carousel>
