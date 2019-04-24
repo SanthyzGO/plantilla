@@ -1,11 +1,12 @@
 <div class="grid-container">
     <div class="card" *ngFor="let sitios of bannerSitios">
         <div class="grid-item">
-            <a [href]="sitios['link']"><img [src]="sitios['ruta']" class="card-img-top" alt="{{sitios['descripcion']}}"></a>
-            <div class="card-body">
-                <h5 class="card-title">{{sitios['titulo']}}</h5>
-                <p class="card-text">{{sitios['descripcion']}}</p>
-            </div>
+            <a [href]="sitios['link']"><img [src]="sitios['ruta']" class="card-img-top" alt="{{sitios['descripcion']}}">
+                <div class="card-body">
+                    <h5 class="card-title">{{sitios['titulo']}}</h5>
+                    <p class="card-text">{{sitios['descripcion']}}</p>
+                </div>
+            </a>
         </div>
     </div>
 </div>
