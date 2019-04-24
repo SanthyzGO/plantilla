@@ -14,6 +14,7 @@ import { CarruselComponent } from './components/carrusel/carrusel.component';
 import { NoticiasComponent } from './components/noticias/noticias.component';
 import { BannernoticiasComponent } from './components/bannernoticias/bannernoticias.component';
 import { BannersitiosComponent } from './components/bannersitios/bannersitios.component';
+import { SitiomapaComponent } from './components/sitiomapa/sitiomapa.component';
 
  
  
@@ -29,7 +30,8 @@ import { BannersitiosComponent } from './components/bannersitios/bannersitios.co
     CarruselComponent,
     NoticiasComponent,
     BannernoticiasComponent,
-    BannersitiosComponent
+    BannersitiosComponent,
+    SitiomapaComponent
   ],
   imports: [
     BrowserModule,
