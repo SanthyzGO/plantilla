@@ -5,17 +5,19 @@
         </div>
         <ngb-carousel>
             <ng-template ngbSlide *ngFor="let sitio of imagesSitios">
-                <a href='{{sitio["link"]}}' target="_blank">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">{{sitio["titulo"]}}</h5>
-                        <p class="card-text">{{sitio["descripcion"]}}</p>
-                    </div>
-                    <div class="card-footer">
-                        <img [src]="sitio['ruta']" alt="{{sitio[' descripcion ']}}">
-                    </div>
-                </a>
+                <div class="ban">
+                    <a href='{{sitio["link"]}}' target="_blank">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">{{sitio["titulo"]}}</h5>
+                            <p class="card-text">{{sitio["descripcion"]}}</p>
+                        </div>
+                        <div class="card-footer">
+                            <img [src]="sitio['ruta']" alt="{{sitio[' descripcion ']}}">
+                        </div>
+                    </a>
+                </div>
             </ng-template>
         </ngb-carousel>
 
     </div>
-</div>
+</div>""

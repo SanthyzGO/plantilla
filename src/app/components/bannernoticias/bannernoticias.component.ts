@@ -39,7 +39,7 @@ export class BannernoticiasComponent implements OnInit {
       'link': 'http://www.bogota.gov.co/temas-de-ciudad/movilidad/ampliacion-49-estaciones-de-transmilenio', 
       'ruta': '../assets/img_noticias/img5.jpg',
       'titulo': 'En marcha plan para ampliar 49 estaciones de TransMilenio',
-      'descripcion':'Con una inversión de más de 20.000 millones de pesos arrancó el proceso para la ampliación de 49 estaciones de TransMilenio.',
+      'descripcion':'Con más de 20.000 millones de pesos arrancó el proceso para la ampliación de 49 estaciones de TransMilenio.',
       'publicacion':'Fecha: 13/04/2019'
     },
     {

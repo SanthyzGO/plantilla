@@ -12,8 +12,7 @@ export class NoticiasComponent implements OnInit {
   imagesNoticias =[
   {
     'link': '/bannernoticias',
-    // 'ruta': '../assets/img_noticias/noticiaTransmi1.png',
-    'ruta': '../assets/img_noticias/luz.jpg',
+    'ruta': '../assets/img_noticias/noticiaTransmi1.png',
     'titulo':'Transmilenio Explota',
     'descripcion':'Transmilenio explota no alcanzan los buses para la cantidad de usuarios'
   },
@@ -39,7 +38,7 @@ export class NoticiasComponent implements OnInit {
     'link': '/bannernoticias', 
     'ruta': '../assets/img_noticias/img5.jpg',
     'titulo': 'En marcha plan para ampliar 49 estaciones de TransMilenio',
-    'descripcion':'Con una inversión de más de 20.000 millones de pesos arrancó el proceso para la ampliación de 49  estaciones de TransMilenio.'
+    'descripcion':'Con más de 20.000 millones de pesos arrancó el proceso para la ampliación de 49  estaciones de TransMilenio.'
   },
   {
     'link': '/bannernoticias', 

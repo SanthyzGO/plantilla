@@ -1,6 +1,6 @@
 img {
-    margin-left: 10%;
-    width: 80%;
+    margin: 0px;
+    width: 100%;
     height: 330px;
 }
 
@@ -8,14 +8,19 @@ img {
 .carousel-control-prev {
     background: black;
     width: 100px;
-    height: 450px;
+    height: 100%;
 }
 
 .carousel-control-next:active,
 .carousel-control-prev:active {
-    background: #B40404;
+    background: #7C7D7D;
 }
 
 a {
     color: black;
+}
+
+.ban {
+    margin-left: 100px;
+    margin-right: 100px;
 }
